@@ -1,3 +1,7 @@
+package tn.esprit.test;
+
+import tn.esprit.entities.Animal;
+import tn.esprit.entities.Zoo;
 public class Main {
     public static void main(String[] args) {
         // Créer des animaux
@@ -6,7 +10,7 @@ public class Main {
         Animal crocodile = new Animal("Reptile", "Crocodile", 8, false);
 
         // Créer un zoo
-        Zoo myZoo = new Zoo("Mon Zoo", "Nabeul");
+        Zoo myZoo = new Zoo("Mon tn.esprit.entities.Zoo", "Nabeul");
 
         // Ajouter des animaux au zoo
         myZoo.addAnimal(lion);
@@ -38,6 +42,6 @@ public class Main {
         anotherZoo.displayAnimals();
 
         Zoo biggerZoo = Zoo.comparerZoo(myZoo, anotherZoo);
-        System.out.println("Le zoo avec le plus d'animaux est : " + biggerZoo.name);
+        System.out.println("Le zoo avec le plus d'animaux est : " + biggerZoo.getName());
     }
 }
